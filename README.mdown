@@ -3,3 +3,53 @@
 **Croogo** is a free, open source, content management system for PHP, released under [MIT License](http://github.com/croogo/croogo/blob/master/LICENSE.txt).
 
 Please refer to the main [README file](//github.com/croogo/croogo/tree/4.0.2/README.mdown)
+
+
+Croogo
+Croogo is a free, open source, content management system for PHP, released under MIT License.
+
+It is powered by CakePHP MVC framework.
+
+Build Status Scrutinizer Code Quality Code Coverage
+
+Requirements
+Apache with mod_rewrite OR nginx
+PHP 7.1 or higher
+MySQL 5.7 or higher
+Installation
+Installation using composer
+The preferred way to install Croogo is by using composer.
+
+composer create-project croogo/app myapp
+cd myapp
+composer install
+$EDITOR config/app.php # change database access credentials
+bin/cake server # then browse to http://localhost:8765 or use vhost
+If you want hack on croogo, you can use the --prefer-source flag, ie:
+
+`composer create-project --prefer-source croogo/app myapp`
+Web based installer
+Extract the archive. Upload the content to your server.
+Create a new MySQL database (charset utf8mb4 with utf8m4_unicode_ci collation)
+Visit http://your-site.com/ from your browser and follow the instructions.
+Manual installation
+Extract the archive. Upload the content to your server.
+Locate your config directory, and rename the following files:
+config/app.default.php to config/app.php, and edit the details.
+You can access your admin panel at http://your-site.com/admin. The installer should display a page for you to create the administrative user.
+Links
+Official website: http://croogo.org
+
+Blog: http://blog.croogo.org
+
+Downloads: http://downloads.croogo.org
+
+Issue Tracker: http://github.com/croogo/croogo/issues
+
+Documentation: http://docs.croogo.org
+
+Google Group: http://groups.google.com/group/croogo
+
+IRC Channel: #croogo on irc.freenode.net
+
+Gitter: Join the chat at https://gitter.im/croogo/croogo
